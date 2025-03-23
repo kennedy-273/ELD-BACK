@@ -65,6 +65,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",  
     "http://localhost:3000",  
     "http://127.0.0.1:8000",  
+    "https://eld-back-dfyb.onrender.com",  
+    "https://eld-tracker-2.vercel.app",  
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -116,7 +118,11 @@ WSGI_APPLICATION = 'trip_planner.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ELD-TRACKER',
+        'NAME': 'eld_tracker',
+        'USER': 'eld_tracker_user',
+        'PASSWORD': 'sJYUZ91E0wCUikGlLPS4drq7qAbfJ13w',
+        'HOST': 'localhost',  
+        'PORT': '5432',
 
     }
 }
